@@ -1,0 +1,22 @@
+<view class="main" wx:if="{{listLength=='0'}}">
+  <view class="img_tip">
+    <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+    <text style="margin-top:20rpx;">目前还没有活动</text>
+  </view>
+</view>
+<view class="main" wx:if="{{listLength!='0'}}">
+  <view class="list" bindtap="hdshInfo" wx:for="{{list}}" 
+  data-mkName="{{item.mkName}}" 
+  data-creator="{{item.creator}}"
+  data-xmName="{{item.xmName}}"
+  data-jbName="{{item.jbName}}" 
+  data-startXf="{{item.startXf}}"
+  data-orderId="{{item.orderId}}"
+  data-evenName="{{item.evenName}}"
+  data-createTime="{{item.createTime}}"
+  >
+    <image src="../images/hd.png" class="list_logo"></image>
+    <view class="list_title">{{item.evenName}}</view>
+    <view class="info">查看</view>
+  </view>
+</view>

@@ -1,0 +1,142 @@
+/* pages/yuyueck/yuyueck.wxss */
+.title{
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+page{
+  background-color: #f7f7f7;
+}
+.btn_group{
+  position: absolute;
+  width: 100%;
+  height: 130rpx;
+  margin-top: 70rpx;
+  background-color: white;
+  border: 0px solid whitesmoke;
+}
+.left{
+  height: 60rpx;
+  float: left;
+  width: 40%;
+  border-radius: 5px 0 0 5px;
+  margin-left: 10%;
+  text-align: center;
+  color: black;
+  margin-top: 33rpx;
+  line-height: 60rpx;
+  border-left: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.right{
+  text-align: center;
+  color: white;
+    margin-top: 33rpx;
+  border-radius: 0 5px 5px 0;
+  height: 60rpx;
+  float: left;
+  width: 40%;
+  line-height: 60rpx;
+   border-top: 1px solid #01b8ab;
+   border-right: 1px solid #01b8ab;
+   border-bottom: 1px solid #01b8ab;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  border: 0px solid #01b8ab;
+  margin-top: 210rpx;
+  /* margin-left: 2.5%; */
+}
+
+.list{
+  height: 120rpx;
+  background-color: white;
+  border: 0px solid gainsboro;
+  border-radius: 0px;
+  margin-top: 10rpx;
+}
+.list_info{
+  background-color: white;
+  border: 0px solid gainsboro;
+  border-radius: 0px;
+  margin-top: -1px;
+  display: none;
+}
+.list_info_l{
+  background-color: white;
+  border: 0px solid gainsboro;
+  border-radius: 0px;
+  margin-top: -1px;
+  display: none;
+}
+.name{
+  position: absolute;
+  color: #838384;
+  margin-left: 120rpx;
+  margin-top: 23rpx;
+  font-weight: bold;
+  font-size: 33rpx;
+}
+.status{
+  position: absolute;
+  margin-top: 65rpx;
+  margin-left: 400rpx;
+  color: #01b8ab;
+}
+.tip{
+  position: absolute;
+  margin-top: 63rpx;
+  margin-left: 120rpx;
+  color: #b4b4b4;
+}
+.down{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 600rpx;
+  margin-top: 25rpx;
+  /* margin-top: -10rpx; */
+}
+.img{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.contents_list{
+  border-top: 1px solid  #EEEEEE;
+  height: 100rpx;
+  width: 90%;
+  margin-left: 5%;
+  line-height: 100rpx;
+}
+.list_name{
+  font-size: 34rpx;
+  color:  #b4b4b4;
+  /* font-weight: bold; */
+  margin-left: 10rpx;
+}
+.name_content{
+ font-size: 34rpx;
+ color:  #b4b4b4;
+ margin-left: 60rpx;
+ font-weight: bold;
+}
+
+
+.img_tip{
+  display: flex;
+  justify-content: center;align-items: center;
+  margin-top: 200rpx;
+  flex-direction: column;
+}
+
+#list_info_hide{
+  display: block;
+}
+#list_info_hide_l{
+  display: block;
+}

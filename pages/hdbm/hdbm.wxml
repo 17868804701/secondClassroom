@@ -1,0 +1,27 @@
+
+<view class="main" wx:if="{{itemLength=='0'}}">
+  <view class="img_tip">
+    <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+    <text style="margin-top:20rpx;">目前还没有活动</text>
+  </view>
+</view>
+<view class="main" wx:if="{{itemLength!='0'}}">
+  <view class="activity_list" wx:for="{{item}}"  >
+    <view class="content">
+      <view class='activity_name'>活动主题：{{item.evenName}}</view>
+      <view class='activity_time'>活动时间：<text style="color:#01b8ab;">{{item.startTime}}至{{item.endTime}}</text></view>
+      <view class='activity_sm'>
+        <view class="classname1">活动说明：{{item.eventDesc}}
+         <text wx:if="{{item.isNotic=='1'}}" style='color:#01b8ab' data-noticDesc='{{item.noticDesc}}' 
+         data-noticStartTime='{{item.noticStartTime}}' data-noticEndTime='{{item.noticEndTime}}'data-noticAddress='{{item.noticAddress}}' bindtap='tzgg'>新的 <text class='tzgg'>《活动通知公告》</text></text>
+                <text wx:if="{{item.isNotic=='0'}}"></text>
+         </view>
+        <view class="classname2" bindtap="bm" data-eventId="{{item.eventId}}">
+         <button wx:if="{{item.bmState==null}}">报名</button> 
+         <button wx:if="{{item.bmState!=null}}">已报名</button> 
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="height:20rpx;width:100%"></view>
+</view>

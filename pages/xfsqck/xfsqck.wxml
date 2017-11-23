@@ -1,0 +1,45 @@
+<!--bx_detail.wxml-->
+<view class="container">
+  <block>
+    <view class="repair-state-panel">
+      <text class="repair-state-title" style=" background-color: #f7f7f7;">处理详情</text>
+      <view class="repair-state" style="border-bottom:0px solid red;">
+        <block wx:for="{{list}}">
+          <view class="repair-state-item" >
+            <!-- 小圆圈 -->
+           <!-- repair-state-icon-success -->
+            <view class="repair-state-icon repair-state-icon-success"></view>
+             <!-- 每集审核最下边边缘线 repair-state-info repair-state-info-last这两个控制左边线,style="border:0px"控制最下边边线 -->
+            <view class="repair-state-info {{index==listLength-1?'repair-state-info-last':''}}">
+              <view class="repair-info-item">
+                <text class="repair-info-bd repair-state-name">{{item.displayName}}</text>
+              </view>
+              <view class="repair-info-item">
+                <text class="repair-info-bd" wx:if="{{item.result==''}}">申请人：{{realname}}</text>
+                <text class="repair-info-bd" wx:if="{{item.result!=''}}">处理人：{{item.operator}}</text>
+                 <view class="repair-info-ft">
+                  <text wx:if="{{item.result=='agree'}}">同意</text>
+                  <text wx:if="{{item.result=='disagree'}}">不同意</text>
+                </view> 
+              </view>
+              <view class="repair-info-item">
+                <text class="repair-info-bd" wx:if="{{item.result==''}}">申请时间：{{item.finishTime}}</text>
+                <text class="repair-info-bd" wx:if="{{item.result!=''}}">处理时间：{{item.finishTime}}</text>
+                <!-- <view class="repair-info-ft">
+                  <text>审核通过</text>
+                </view> -->
+              </view>
+              <view class="repair-info-item">
+                <text class="repair-info-bd" wx:if="{{item.result==''}}">申请描述：{{item.description}}</text>
+                <text class="repair-info-bd" wx:if="{{item.result!=''}}">处理详情：{{item.description}}</text>
+                <!-- <view class="repair-info-ft">
+                  <text>审核通过</text>
+                </view> -->
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

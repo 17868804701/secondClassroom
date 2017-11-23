@@ -1,0 +1,39 @@
+<view class="main">
+  <view class="list_title">
+    <image src="../images/list.png"></image>
+    <text class="apply_title">正在审核中列表</text>
+  </view>
+  <view class="content">
+    <view class="main" wx:if="{{sqListLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:100rpx;height:100rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有正在审核的学分</text>
+      </view>
+    </view>
+    <view class="list" wx:if="{{sqListLength!='0'}}" wx:for="{{sqList}}"  bindtap="xfsqck" data-orderId="{{item.orderId}}" data-processId="{{item.processId}}">
+      <image src="../images/xs.png" class="logo"></image>
+      <view class="name">{{item.mkName}}</view>
+      <view class="status">审核状态:审核中...</view>
+      <view class="info">查看详情</view>
+    </view>
+  </view>
+  <view class="list_title" style="margin-top:20rpx;">
+    <image src="../images/list.png"></image>
+    <text class="apply_title">申请完成列表</text>
+  </view>
+  <view class="content">
+    <view class="main" wx:if="{{endListLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:100rpx;height:100rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有审核完成的学分</text>
+      </view>
+    </view>
+    <view class="list" wx:if="{{endListLength!='0'}}" wx:for="{{endList}}" bindtap="xfsqck" data-orderId="{{item.orderId}}" data-processId="{{item.processId}}">
+      <image src="../images/xs.png" class="logo"></image>
+      <!-- <view class="name" wx:if="{{item.evenName==undefined}}">普通学分</view> -->
+      <view class="name">{{item.mkName}}</view>
+      <view class="status">审核状态：审核成功</view>
+      <view class="info" >查看详情</view>
+    </view>
+  </view>
+</view>

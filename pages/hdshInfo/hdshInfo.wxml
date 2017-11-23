@@ -1,0 +1,45 @@
+<view class="main">
+
+  <view class="title">
+    <text class="title_name">活动审核</text>
+    <text class="stu_num">学号：{{creator}}</text>
+    <!-- <text class="stu_num">学号：{{username}}</text> -->
+    <image src="../images/qd1.png" class="title_img"></image>
+  </view>
+  <view class="content">
+    <view class="ac_name">
+      <text>{{evenname}}</text>
+    </view>
+     <view class="ac_tel">
+      <text>模块：{{mkname}}</text>
+    </view>
+    <view class="ac_tel">
+      <text>项目：{{xmname}}</text>
+    </view>
+
+    <view class="ac_type">
+      <text>级别：{{jbname}}</text>
+    </view>
+
+    <view class="ac_fenyuan">
+      <text>学分：{{startxf}}分</text>
+    </view>
+
+    <view class="ac_sq">
+      <text>时间：{{createtime}}</text>
+    </view>
+  </view>
+
+  <view class="caozuo">
+    <radio-group bindchange="radioChange" id="radio">
+      <label class="checkbox">审核状态：
+        <checkbox value="disagree" checked="" style="zoom:60%"/>驳回
+        <checkbox value="agree" checked="" style="zoom:60%"/>同意
+      </label>
+    </radio-group>
+    <view class="section">
+      <textarea bindinput="bindTextAreaBlur"  placeholder="审批意见" id="textarea" />
+    </view>
+    <button class="no" bindtap="tijiao">提交</button>
+  </view>
+</view>

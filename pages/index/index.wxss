@@ -1,0 +1,111 @@
+.main{
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.list_hdbm{
+  width: 94%;
+  height: 200rpx;
+  border: 1px solid #01b8ab;
+  margin-left: 3%;
+  /* margin-top: 30rpx; */
+  box-shadow: -15px 5px 5px whitesmoke;
+    background: #02acbe;
+  border-radius: 5px;
+}
+.list_ckyy{
+    width: 94%;
+  height: 200rpx;
+  border: 1px solid #899fd5;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+  background: #899fd5;
+  border-radius: 5px;
+}
+.list_hdqd{
+      width: 94%;
+  height: 200rpx;
+  border: 1px solid #00c669;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+  background: #00c669; 
+  border-radius: 5px;
+}
+.list_sh{
+    width: 94%;
+  height: 200rpx;
+  border: 1px solid #02acbe;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+
+  border-radius: 5px;
+    background: -webkit-linear-gradient(#01b8ab,#20a1a1); 
+  }
+.list_xfck{
+      width: 94%;
+  height: 200rpx;
+  border: 1px solid #FA8798;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+  background: #FA8798;
+  border-radius: 5px;
+
+}
+.list_xfmx{
+   width: 94%;
+  height: 200rpx;
+  border: 1px solid #7eb6ec;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+  background: #7eb6ec;
+  border-radius: 5px;
+}
+
+.list_xxlb{
+    width: 94%;
+  height: 200rpx;
+  border: 1px solid orange;
+  margin-left: 3%;
+  margin-top: 30rpx;
+  box-shadow: -15px 5px 5px whitesmoke;
+  background: orange;
+  border-radius: 5px;
+}
+.line{
+  position: absolute;
+  border-bottom: 1px whitesmoke dashed;
+  width: 57%;
+  margin-top: 120rpx; 
+  margin-left: 40rpx;
+}
+.activity{
+  border-right: 1px solid whitesmoke;
+  width: 75%;
+  height: 140rpx;
+  margin-top: 30rpx;
+}
+.activity_title{
+  position: absolute;
+  color: white;
+  font-size: 35rpx;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+}
+.yulan_icon{
+  position: absolute;
+  margin-left: 570rpx;
+  width: 70rpx;
+  margin-top: 45rpx;
+  height: 70rpx;
+}
+.time{
+    position: absolute;
+  color: white;
+  font-size: 30rpx;
+  margin-top: 105rpx;
+  margin-left: 40rpx;
+}

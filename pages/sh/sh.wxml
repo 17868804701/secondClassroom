@@ -1,0 +1,17 @@
+<view class="main">
+  <!-- <view class="list" bindtap="xfsh">
+    <image src="../images/xs.png" class="list_logo"></image>
+    <text class="list_title">普通学分审核</text>
+    <image src="../images/right.png" class="right_icon"></image>
+  </view> -->
+  <view class="list" bindtap="hdsh">
+    <image src="../images/xs.png" class="list_logo"></image>
+    <text class="list_title">活动审核</text>
+    <image src="../images/right.png" class="right_icon"></image>
+  </view>
+  <view class="list" bindtap="hddw">
+    <image src="../images/xs.png" class="list_logo"></image>
+    <text class="list_title">活动定位</text>
+    <image src="../images/right.png" class="right_icon"></image>
+  </view>
+</view>

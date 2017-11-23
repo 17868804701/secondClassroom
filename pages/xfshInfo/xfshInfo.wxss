@@ -1,0 +1,151 @@
+/* pages/hdshInfo/hdshInfo.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.title{
+  width: 100%;
+  height: 250rpx;
+  border: 0px solid red;
+ padding-top: 50rpx;
+}
+.title_name{
+  position: absolute;
+  margin-top: 30rpx;
+  font-size: 80rpx;
+  color: #333;
+  margin-left: 50rpx;
+  font-weight: bold;
+}
+.stu_name{
+  position: absolute;
+  margin-top: 170rpx;
+  font-size: 35rpx;
+  color: #8e8e8e;
+   margin-left: 50rpx;
+}
+.stu_num{
+  position: absolute;
+  margin-top: 120rpx;
+  font-size: 35rpx;
+   margin-left: 50rpx;
+     color: #8e8e8e;
+}
+.title_img{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  margin-left: 520rpx;
+  opacity: 0.4;
+}
+.content{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+
+.ac_name{
+  color: #01b8ab;
+  font-size: 35rpx;
+  width: 90%;
+  height: 140rppx;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 140rpx;
+  margin-left: 5%;
+}
+ .ac_name text{
+  margin-left: 10rpx;
+} 
+
+.ac_xf,.ac_type{
+  color: #c2c2c2;
+  font-size: 35rpx;
+  width: 90%;
+  height: 120rppx;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 120rpx;
+  margin-left: 5%;
+}
+.ac_fenyuan{
+  color: #c2c2c2;
+  font-size: 35rpx;
+  width: 90%;
+  height: 120rppx;
+  border-bottom: 0px solid #eeeeee;
+  line-height: 120rpx;
+  margin-left: 5%;
+}
+ .ac_xf text,.ac_type text,.ac_fenyuan text,.ac_sq text{
+  margin-left: 10rpx;
+} 
+
+.caozuo{
+  width: 100%;
+  height: 200rpx;
+  border: 0px solid red;
+}
+.no{
+  position: absolute;
+  background-color: #01b8ab;
+  color: white;
+  margin-left: 150rpx;
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 80rpx;
+  font-size: 30rpx;
+}
+.yes{
+  background-color: #01b8ab;
+  color: white;
+  position: absolute;
+  margin-left: 420rpx;
+  margin-top: 80rpx;
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+
+
+
+.fujian{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
+  border-radius: 5px;
+  margin-top: 30rpx;
+}
+.tupian{
+  margin-left: 20rpx;
+}
+.docx{
+  margin-left: 20rpx;
+  color: blue;
+}
+.list{
+  width: 100%;
+  padding-top: 20rpx;
+  background-color: white;
+}
+.list_docx{
+  width: 100%;
+  padding-top: 40rpx;
+  padding-bottom: 50rpx;
+  background-color: white;
+}
+.img{
+  width: 100%;
+  margin-top: 17rpx;
+  /* background-color: white; */
+  /* height: 200rpx; */
+}
+.img image{
+  background-color: white;
+  width: 140rpx;
+  height: 140rpx;
+  /* float:left; */
+  border: 1px solid gainsboro;
+  margin-left: 23rpx;
+}

@@ -1,0 +1,21 @@
+
+<view class="main" wx:if="{{itemLength=='0'}}">
+  <view class="img_tip">
+    <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+    <text style="margin-top:20rpx;">目前还没有活动</text>
+  </view>
+</view>
+<view class="main" wx:if="{{itemLength!='0'}}">
+  <view class="activity_list" wx:for="{{item}}">
+    <view class="content">
+      <view class='activity_name'>活动主题：{{item.evenName}}</view>
+      <view class='activity_time'>活动时间：<text style="color:#01b8ab;">{{item.startTime}}至{{item.endTime}}</text></view>
+      <view class='activity_sm'>
+        <view class="classname1">活动说明：{{item.eventDesc}}</view>
+        <view class="classname2"><button bindtap="bm" data-eventId="{{item.eventId}}">定位</button><button bindtap="fqqt" data-eventId="{{item.eventId}}">签退</button></view>
+        <!-- <view class="classname2"><button>签退</button></view> -->
+      </view>
+    </view>
+  </view>
+  <view style="height:20rpx;width:100%"></view>
+</view>

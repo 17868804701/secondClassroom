@@ -1,0 +1,65 @@
+<view class="main" wx:if="{{userType=='1'}}" >
+  <view class="list_hdbm" bindtap="hdbm">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">活动在线报名</text>
+      <text class="time">备注：活动报名入口</text>
+      <image src="../images/yulan.png" class="yulan_icon"></image>
+    </view>
+  </view>
+  <!--  -->
+  <view class="list_ckyy" style="background-color:#899fd5" bindtap="hdyuyueck">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">活动预约查看</text>
+      <text class="time">备注：活动预约查看入口</text>
+      <image src="../images/search.png" class="yulan_icon"></image>
+    </view>
+  </view>
+  <view class="list_hdqd" bindtap="hdqd">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">活动签到</text>
+      <text class="time">备注：活动签到入口</text>
+      <image src="../images/zuobiao.png" class="yulan_icon"></image>
+    </view>
+  </view>
+  <view class="list_xfck" bindtap="apply_xfList">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">学分申请查看</text>
+      <text class="time">备注：学生进入查看学分申请情况</text>
+      <image src="../images/search.png" class="yulan_icon"></image>
+    </view>
+  </view>
+  <view class="list_xfmx" bindtap="xfmx">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">学分明细查看</text>
+      <text class="time">备注：学生进入查看学分明细情况</text>
+      <image src="../images/search.png" class="yulan_icon"></image>
+    </view>
+  </view>
+
+
+    <!-- <view class="list_xxlb" bindtap="xxlb">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">消息列表</text>
+      <text class="time">备注：学生进入查看消息通知</text>
+      <image src="../images/notice.png" class="yulan_icon"></image>
+    </view>
+  </view> -->
+
+  </view>
+
+
+  <view class="list_sh" bindtap="sh" wx:if="{{userType=='0'||userType==null}}">
+    <view class="line"></view>
+    <view class="activity">
+      <text class="activity_title">审核和活动管理(管理员)</text>
+      <text class="time">备注：活动审核和定位</text>
+      <image src="../images/edit.png" class="yulan_icon"></image>
+    </view>
+  </view>
+

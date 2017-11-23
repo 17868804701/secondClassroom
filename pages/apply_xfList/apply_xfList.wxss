@@ -1,0 +1,62 @@
+/* pages/apply_xfList/apply_xfList.wxss */
+.list_title{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  background-color: white;
+  border-bottom: 1px solid #f7f7f7;
+}
+.list_title image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 15rpx;
+}
+.apply_title{
+  position: absolute;
+}
+page{
+  background-color: #f7f7f7;
+}
+.list{
+  height: 140rpx;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 20rpx;
+  background-color: white;
+}
+.logo{
+  position: absolute;
+  width: 90rpx;
+  height: 90rpx;
+  margin: 25rpx;
+}
+.name{
+  position: absolute;
+  margin-left: 140rpx;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+  color: #777777;
+  font-weight: bold;
+
+}
+.status{
+    position: absolute;
+  margin-left: 140rpx;
+  margin-top: 80rpx;
+  color: #01b8ab;
+}
+.info{
+  font-weight: bold;
+ position: absolute;
+  margin-left: 570rpx;
+  margin-top: 60rpx;
+  color: #01b8ab;
+}
+
+.img_tip{
+  display: flex;
+  justify-content: center;align-items: center;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  flex-direction: column;
+}

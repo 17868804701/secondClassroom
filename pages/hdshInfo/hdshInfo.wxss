@@ -1,0 +1,123 @@
+/* pages/hdshInfo/hdshInfo.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.title{
+  width: 100%;
+  height: 250rpx;
+  border: 0px solid red;
+ padding-top: 50rpx;
+}
+.title_name{
+  position: absolute;
+  margin-top: 30rpx;
+  font-size: 80rpx;
+  color: #333;
+  margin-left: 50rpx;
+  font-weight: bold;
+}
+.stu_name{
+  position: absolute;
+  margin-top: 170rpx;
+  font-size: 35rpx;
+  color: #8e8e8e;
+   margin-left: 50rpx;
+}
+.stu_num{
+  position: absolute;
+  margin-top: 140rpx;
+  font-size: 35rpx;
+   margin-left: 50rpx;
+     color: #8e8e8e;
+}
+.title_img{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  margin-left: 520rpx;
+  opacity: 0.4;
+}
+.content{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+
+.ac_name{
+  color: #01b8ab;
+  font-size: 35rpx;
+  width: 90%;
+  height: 140rppx;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 140rpx;
+  margin-left: 5%;
+}
+ .ac_name text{
+  margin-left: 10rpx;
+} 
+
+.ac_tel,.ac_type,.ac_fenyuan{
+  color: #c2c2c2;
+  font-size: 35rpx;
+  width: 90%;
+  height: 120rppx;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 120rpx;
+  margin-left: 5%;
+}
+.ac_sq{
+  color: #c2c2c2;
+  font-size: 35rpx;
+  width: 90%;
+  height: 120rppx;
+  border-bottom: 0px solid #eeeeee;
+  line-height: 120rpx;
+  margin-left: 5%;
+}
+ .ac_tel text,.ac_type text,.ac_fenyuan text,.ac_sq text{
+  margin-left: 10rpx;
+} 
+
+.caozuo{
+  width: 100%;
+  height: 200rpx;
+  border: 0px solid red;
+}
+.no{
+  position: absolute;
+  background-color: #01b8ab;
+  color: white;
+  margin-left: 100rpx;
+  margin-bottom: 40rpx;
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 50rpx;
+  font-size: 30rpx;
+}
+.yes{
+  background-color: #01b8ab;
+  color: white;
+  position: absolute;
+  margin-left: 420rpx;
+  margin-top: 80rpx;
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+#radio{
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+#textarea{
+  width: 86%;
+  margin-left: 40rpx;
+  border: 1px solid gainsboro;
+  height: 150rpx;
+  margin-top: 20rpx;
+  padding: 20rpx 0 0 20rpx;
+  border-radius: 10rpx;
+}

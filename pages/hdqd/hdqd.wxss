@@ -1,0 +1,67 @@
+.hdTitle{
+  height: 220rpx;
+  width: 100%;
+}
+page{
+  background-color: #f7f7f7;
+}
+.title{
+  background-color: white;
+}
+.content_list{
+  height: 200rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.hd{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  margin: 40rpx 0 40rpx 10rpx;
+}
+.name{
+  width: 62%;
+  border: 0px solid red;
+  position: absolute;
+  margin: 40rpx 0 30rpx 120rpx;
+  font-size: 35rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+white-space: nowrap;
+}
+.time{
+  position: absolute;
+  margin: 90rpx 0 30rpx 120rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.time1{
+  position: absolute;
+  margin: 140rpx 0 30rpx 120rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.line{
+  text-align: center;
+  position: absolute;
+  width: 110rpx;
+  height: 120rpx;
+  margin-top: 30rpx;
+  margin-left: 600rpx;
+  color: #01b8ab;
+  font-weight: bold;
+  line-height: 110rpx;
+  border-left: 1px solid gainsboro;
+}
+.qd{
+  width: 50rpx;
+  height: 50rpx;
+}
+.img_tip{
+  display: flex;
+  justify-content: center;align-items: center;
+  margin-top: 200rpx;
+  flex-direction: column;
+}

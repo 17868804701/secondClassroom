@@ -1,0 +1,28 @@
+<view class="main" wx:if="{{hdlistLength=='0'}}">
+  <view class="img_tip">
+    <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+    <text style="margin-top:20rpx;">目前还没有可以签到的活动</text>
+  </view>
+</view>
+
+ 
+
+<view class="main" wx:if="{{hdlistLength!='0'}}">
+  <view class="title">
+    <image src="../images/hdTitle.png" class="hdTitle"></image>
+  </view>
+  <view class="list">
+    <view class="content_list" wx:for="{{hdlist}}">
+      <view class="name">活动：{{item.evenName}}</view>
+      <view class="time">开始时间：{{item.startTime}}</view>
+      <view class="time1">结束时间：{{item.endTime}}</view>
+      <image src="../images/hd.png" class="hd"></image>
+      <view wx:if="{{item.state=='0'}}" class="line" bindtap="qd" data-orderId="{{item.orderId}}" data-state="{{item.state}}" data-eventId="{{item.eventId}}">
+        签到
+      </view>
+       <view wx:if="{{item.state=='2'}}" class="line" bindtap="qt" data-orderId="{{item.orderId}}" data-state="{{item.state}}" data-eventId="{{item.eventId}}">
+        签退
+      </view>
+    </view>
+  </view>
+</view>

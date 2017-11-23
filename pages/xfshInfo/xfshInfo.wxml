@@ -1,0 +1,45 @@
+<view class="main">
+
+  <view class="title">
+    <text class="title_name">学分审核</text>
+    <text class="stu_name">学生：黄森</text>
+    <text class="stu_num">学号：14610801152313</text>
+    <image src="../images/qd1.png" class="title_img"></image>
+  </view>
+  <view class="content">
+    <view class="ac_name">
+      <text>第二课堂学分申请</text>
+    </view>
+    <view class="ac_xf">
+      <text>申请学分：3分</text>
+    </view>
+
+    <view class="ac_type">
+      <text>申请模块：学科竞赛</text>
+    </view>
+    <view class="ac_fenyuan">
+      <text>所属分院：信息工程学院</text>
+    </view>
+  </view>
+
+
+
+  <view class="fujian">
+    <view class="list">
+      <text class="tupian">图片资料:</text>
+    </view>
+
+    <view class="img" wx:for="{{image}}">
+      <image bindtap="show_img" src="{{image}}"></image>
+    </view>
+    
+    <view class="list_docx" bindtap="open_file">
+      <text class="docx">附件:西安欧亚学院第二课堂学分认定表.doc</text>
+    </view>
+  </view>
+  <view class="caozuo">
+    <button class="no">驳回</button>
+    <button class="yes">审核通过</button>
+  </view>
+
+</view>

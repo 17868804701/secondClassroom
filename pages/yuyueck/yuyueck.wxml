@@ -1,0 +1,129 @@
+<view class="body">
+  <text class="title">参加活动情况:</text>
+
+
+
+  <view class="btn_group">
+    <view class="left" bindtap="left" style="background-color:{{bgLeft}}; color:{{cLeft}};border:1px solid {{bLeft}}">
+    正在进行的
+    </view>
+    <view class="right" bindtap="right" style="background-color:{{bgRight}}; color:{{cRight}};border:1px solid {{bRight}}">已参加的活动</view>
+  </view>
+
+
+
+  <view class="content" style="display:{{L}}">
+
+
+    <view class="content_list" wx:if="{{wcjlistLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有活动</text>
+      </view>
+    </view>
+    <view class="content_list" wx:for="{{wcjlist}}" wx:if="{{wcjlistLength!='0'}}" wx:key="evenName" wx:for-item="item">
+    <view class="list" bindtap="activity1" data-index="{{index}}" id="{{item.evenName}}">
+        <image hidden="{{item.isNotic==='0'}}" src="../images/message.png" class="message" catchtap='chakan' data-noticDesc='{{item.noticDesc}}' data-noticStartTime='{{item.noticStartTime}}' data-noticEndTime='{{item.noticEndTime}}'data-noticAddress='{{item.noticAddress}}'></image>
+        <image src="../images/xs.png" class="img"></image>
+        <text class="name">{{item.evenName}}</text>
+        <text class="tip">查看详情</text>
+        <text class="status">审核中...</text>
+        <!-- <text class="status" wx:if="{{item.state=='0'}}">审核通过</text> -->
+        <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
+      </view>
+      <view class="list_info_l" id="{{item.open ? 'list_info_hide_l' : ''}}">
+        <view class="contents_list">
+          <text class="list_name">学生姓名</text>
+          <text class="name_content">{{realname}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">学生学号</text>
+          <text class="name_content">{{username}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动分数</text>
+          <text class="name_content">{{item.endXf}}分</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动模块</text>
+          <text class="name_content">{{item.mkName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动项目</text>
+          <text class="name_content">{{item.xmName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动级别</text>
+          <text class="name_content">{{item.jbName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">审核状态</text>
+          <text class="name_content">审核中...</text>
+          <!-- <text class="name_content" wx:if="{{item.state=='0'}}">审核通过</text> -->
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+  <view class="content" style="display:{{R}}">
+    <view class="content_list" wx:if="{{ycjlistLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有活动</text>
+      </view>
+    </view>
+    <view class="content_list" wx:for="{{ycjlist}}" wx:if="{{ycjlistLength!='0'}}" wx:key="evenName" wx:for-item="item">
+
+
+      <view class="list" bindtap="activity" data-index="{{index}}" id="{{item.evenName}}">
+        <image src="../images/xs.png" class="img"></image>
+        <text class="name">{{item.evenName}}</text>
+        <text class="tip">查看详情</text>
+        <text class="status">审核通过</text>
+        <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
+      </view>
+
+      <view class="list_info" id="{{item.open ? 'list_info_hide' : ''}}">
+        <view class="contents_list">
+          <text class="list_name">学生姓名</text>
+          <text class="name_content">{{realname}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">学生学号</text>
+          <text class="name_content">{{username}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动分数</text>
+          <text class="name_content">{{item.endXf}}分</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动模块</text>
+          <text class="name_content">{{item.mkName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动项目</text>
+          <text class="name_content">{{item.xmName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动级别</text>
+          <text class="name_content">{{item.jbName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">审核状态</text>
+          <text class="name_content">审核通过</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

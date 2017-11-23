@@ -1,0 +1,79 @@
+<view class="body">
+  <text class="title">已获得学分明细:</text>
+  <view class="btn_group">
+    <view class="left" bindtap="left" style="background-color:{{bgLeft}}; color:{{cLeft}};border:1px solid {{bLeft}}">社区学分</view>
+    <view class="right" bindtap="right" style="background-color:{{bgRight}}; color:{{cRight}};border:1px solid {{bRight}}">分院学分</view>
+  </view>
+  <view class="content" style="display:{{L}}">
+    <view class="content_list" wx:if="{{xsclistLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有学分申请</text>
+      </view>
+    </view>
+    <view class="content_list" wx:if="{{xsclistLength!='0'}}" wx:for="{{xsclist}}" wx:key="operateTime" wx:for-item="item">
+
+
+      <view class="list" bindtap="activity1" data-index="{{index}}" id="{{item.operateTime}}">
+        <image src="../images/xs.png" class="img"></image>
+        <text class="name">{{item.evenName}}</text>
+        <text class="tip">查看详情</text>
+        <!-- <text class="status">审核中...</text> -->
+        <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
+      </view>
+
+
+      <view class="list_info_l" id="{{item.open ? 'list_info_hide_l' : ''}}">
+        <view class="contents_list">
+          <text class="list_name">获得学分</text>
+          <text class="name_content">{{item.endxf}}分</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动模块</text>
+          <text class="name_content">{{item.mkName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">处理时间</text>
+          <text class="name_content">{{item.operateTime}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content" style="display:{{R}}">
+    <view class="content_list" wx:if="{{fylistLength=='0'}}">
+      <view class="img_tip">
+        <image src="../images/zl.png" style="width:200rpx;height:200rpx;"></image>
+        <text style="margin-top:20rpx;">目前还没有学分申请</text>
+      </view>
+    </view>
+    <view class="content_list" wx:if="{{fylistLength!='0'}}" wx:for="{{fylist}}" wx:key="operateTime" wx:for-item="item">
+
+
+      <view class="list" bindtap="activity" data-index="{{index}}" id="{{item.operateTime}}">
+        <image src="../images/xs.png" class="img"></image>
+        <text class="name" wx:if="{{item.type=='0'}}">普通学分申请</text>
+        <text class="name" wx:if="{{item.type=='1'}}">{{item.evenName}}</text>
+        <text class="tip">查看详情</text>
+        <!-- <text class="status">审核已通过</text> -->
+      <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
+      </view>
+
+
+      <view class="list_info" id="{{item.open ? 'list_info_hide' : ''}}">
+        <view class="contents_list">
+          <text class="list_name">获得学分</text>
+          <text class="name_content">{{item.endxf}}分</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">活动模块</text>
+          <text class="name_content">{{item.mkName}}</text>
+        </view>
+        <view class="contents_list">
+          <text class="list_name">处理时间</text>
+          <text class="name_content">{{item.operateTime}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

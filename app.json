@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/yuyueck/yuyueck",
+    "pages/index/index",
+   "pages/xxinfo/xxinfo",
+   "pages/xxlb/xxlb",
+    "pages/hdqd/hdqd",
+    "pages/hdbm/hdbm",
+    "pages/hddw/hddw",
+    "pages/xfmx/xfmx",
+    "pages/xfshInfo/xfshInfo",
+    "pages/xfsh/xfsh",
+    "pages/hdshInfo/hdshInfo",
+    "pages/hdsh/hdsh",
+    "pages/sh/sh",
+    "pages/apply_xfList/apply_xfList",
+    "pages/xfsqck/xfsqck"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
