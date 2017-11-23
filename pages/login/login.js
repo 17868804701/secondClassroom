@@ -48,6 +48,7 @@ Page({
     },
     success: function (res) {
      // 保存sessionid和userName
+     console.log(res.data)
      getApp().data.sessionId = res.data.object.sessionId
      getApp().data.userName = res.data.object.userName
      getApp().data.fyId = res.data.object.fyId
