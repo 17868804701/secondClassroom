@@ -110,6 +110,22 @@ Page({
        }
       }
      })
+    } else if (res.data.resultCode == '-1111') {
+     wx.showModal({
+      title: '登录提示',
+      content: '登录超时，跳转到主页...',
+      success: function (res) {
+       if (res.confirm) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
+       } else if (res.cancel) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
+       }
+      }
+     })
     } else {
      console.log(res.data.object.wcjlist)
      that.setData({

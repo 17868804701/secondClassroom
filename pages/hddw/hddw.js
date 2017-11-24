@@ -38,6 +38,22 @@ Page({
        }
       }
      })
+    } else if (res.data.resultCode == '-1111') {
+     wx.showModal({
+      title: '登录提示',
+      content: '登录超时，跳转到主页...',
+      success: function (res) {
+       if (res.confirm) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
+       } else if (res.cancel) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
+       }
+      }
+     })
     } else {
      that.setData({
       item: res.data.object.list,
@@ -91,6 +107,22 @@ Page({
           }
          }
         })
+       } else if (res.data.resultCode == '-1111') {
+        wx.showModal({
+         title: '登录提示',
+         content: '登录超时，跳转到主页...',
+         success: function (res) {
+          if (res.confirm) {
+           wx.redirectTo({
+            url: '../login/login',
+           })
+          } else if (res.cancel) {
+           wx.redirectTo({
+            url: '../login/login',
+           })
+          }
+         }
+        })
        } else {
         if (res.data.object.resultCode == '0000') {
          wx.showModal({
@@ -139,6 +171,22 @@ Page({
       success: function (res) {
        if (res.confirm) {
         console.log('用户点击确定')
+       }
+      }
+     })
+    } else if (res.data.resultCode == '-1111') {
+     wx.showModal({
+      title: '登录提示',
+      content: '登录超时，跳转到主页...',
+      success: function (res) {
+       if (res.confirm) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
+       } else if (res.cancel) {
+        wx.redirectTo({
+         url: '../login/login',
+        })
        }
       }
      })
