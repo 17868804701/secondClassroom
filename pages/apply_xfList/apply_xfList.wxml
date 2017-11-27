@@ -32,7 +32,7 @@
       <image src="../images/xs.png" class="logo"></image>
       <!-- <view class="name" wx:if="{{item.evenName==undefined}}">普通学分</view> -->
       <view class="name">{{item.mkName}}</view>
-      <view class="status">审核状态：审核成功</view>
+      <view class="status">审核状态：审核完成</view>
       <view class="info" >查看详情</view>
     </view>
   </view>
