@@ -15,7 +15,7 @@
          <form class="login-form"> 
           <view class="input-group {{userid_focus ? 'active' : ''}}">
             <text class="input-label">帐号</text>
-            <input type="text" id="userid"  placeholder="工号/邮箱/手机号"  bindinput="userInput" bindfocus="inputFocus" bindblur="inputBlur" />
+            <input type="text" id="userid"  placeholder="工号/学号"  bindinput="userInput" bindfocus="inputFocus" bindblur="inputBlur" />
           </view>
           <view class="input-group {{passwd_focus ? 'active' : ''}}">
             <text class="input-label">密码</text>
