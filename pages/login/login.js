@@ -31,7 +31,7 @@ Page({
   if (this.data.username == undefined || this.data.password == undefined) {
    wx.showModal({
     title: '登录提示',
-    content: '账号或密码不能为空,请重新新输入',
+    content: '账号或密码不能为空,请重新输入',
     success: function (res) {
      if (res.confirm) {
       console.log('用户点击确定')
@@ -97,7 +97,7 @@ Page({
         duration: 2000
        })
        wx.redirectTo({
-        url: '../index/index',
+        url: '../main/main',
        })
       }
      }

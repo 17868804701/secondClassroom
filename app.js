@@ -9,6 +9,7 @@ App({
  // https://www.nuoplus.com/3e-platform-intf
   data: {
    url: 'https://meetmecar.com/3e-platform-intf/ws/',
+   // url: 'https://www.nuoplus.com:81/3e-platform-intf/ws/',
     userName:'',
     sessionId:'',
     fyId:'', 
