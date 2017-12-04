@@ -30,6 +30,14 @@ page{
    margin-left: 50rpx;
      color: #8e8e8e;
 }
+.stu_num1{
+
+  position: absolute;
+  margin-top: 190rpx;
+  font-size: 35rpx;
+   margin-left: 50rpx;
+     color: #8e8e8e;
+}
 .title_img{
   width: 200rpx;
   height: 200rpx;

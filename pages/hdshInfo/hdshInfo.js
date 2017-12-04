@@ -21,6 +21,7 @@ Page({
   let xmname = options.xmname
   let orderid = options.orderid
   let evenname = options.evenname
+  let realname = options.realname
   console.log(options)
   this.setData({
    createtime: createtime,
@@ -31,7 +32,8 @@ Page({
    xmname: xmname,
    orderid: orderid,
    username: userName,
-   evenname: evenname
+   evenname: evenname,
+   realname: realname
   })
  },
  radioChange: function (e) {

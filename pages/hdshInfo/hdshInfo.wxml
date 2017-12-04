@@ -3,7 +3,7 @@
   <view class="title">
     <text class="title_name">活动审核</text>
     <text class="stu_num">学号：{{creator}}</text>
-    <!-- <text class="stu_num">学号：{{username}}</text> -->
+     <text class="stu_num1">姓名：{{realname}}</text> 
     <image src="../images/qd1.png" class="title_img"></image>
   </view>
   <view class="content">

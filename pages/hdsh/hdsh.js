@@ -17,8 +17,9 @@ Page({
   let xmname = e.currentTarget.dataset.xmname
   let orderid = e.currentTarget.dataset.orderid
   let evenname = e.currentTarget.dataset.evenname
+  let realname = e.currentTarget.dataset.realname
   wx.navigateTo({
-   url: `../hdshInfo/hdshInfo?createtime=${createtime}&&creator=${creator}&&jbname=${jbname}&&mkname=${mkname}&&startxf=${startxf}&&xmname=${xmname}&&orderid=${orderid}&&evenname=${evenname}`,
+    url: `../hdshInfo/hdshInfo?createtime=${createtime}&&creator=${creator}&&jbname=${jbname}&&mkname=${mkname}&&startxf=${startxf}&&xmname=${xmname}&&orderid=${orderid}&&evenname=${evenname}&&realname=${realname}`,
   })
  },
  /**
@@ -70,7 +71,7 @@ Page({
       }
      })
     } else {
-     console.log(res.data.object.clsRoomList.length)
+     console.log(res.data.object.clsRoomList)
      that.setData({
       list: res.data.object.clsRoomList,
       listLength: res.data.object.clsRoomList.length

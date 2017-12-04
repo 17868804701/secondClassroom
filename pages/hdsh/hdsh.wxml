@@ -14,9 +14,10 @@
   data-orderId="{{item.orderId}}"
   data-evenName="{{item.evenName}}"
   data-createTime="{{item.createTime}}"
+  data-realname="{{item.realname}}"
   >
     <image src="../images/hd.png" class="list_logo"></image>
-    <view class="list_title">{{item.evenName}}</view>
+    <view class="list_title">{{item.evenName}} <text style='color:#20a1a1;margin-left:10rpx;'>({{item.realname}})</text></view>
     <view class="info">查看</view>
   </view>
 </view>
