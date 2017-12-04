@@ -55,6 +55,11 @@ button {
 
 .classname1 {
   margin-left: 20rpx;
+        word-break: break-all;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
 }
 .img_tip{
   display: flex;
@@ -66,4 +71,8 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.tipp{
+ color: #20a1a1;
+ text-decoration: underline;
 }

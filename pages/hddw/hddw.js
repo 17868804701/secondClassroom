@@ -152,6 +152,21 @@ Page({
    }
   })
  },
+ show_gg: function (e) {
+  let tzgg = e.currentTarget.dataset.noticstarttime;
+  console.log(tzgg)
+  wx.showModal({
+   title: '活动说明',
+   content: tzgg,
+   success: function (res) {
+    if (res.confirm) {
+     console.log('用户点击确定')
+    } else if (res.cancel) {
+     console.log('用户点击取消')
+    }
+   }
+  })
+ },
  fqqt: function (e) {
   let eventId = e.currentTarget.dataset.eventid;
   console.log(eventId)

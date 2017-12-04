@@ -15,7 +15,7 @@
                  <text wx:if="{{item.isNotic=='1'}}" style='color:#01b8ab' data-noticDesc='{{item.noticDesc}}' 
          data-noticStartTime='{{item.noticStartTime}}' data-noticEndTime='{{item.noticEndTime}}'data-noticAddress='{{item.noticAddress}}' bindtap='tzgg'>新的 <text class='tzgg'>《活动通知公告》</text></text>
                 <text wx:if="{{item.isNotic=='0'}}"></text>
-        <text bindtap='show_gg' data-noticStartTime='{{item.eventDesc}}'>活动说明：{{item.eventDesc}}</text>
+        <text bindtap='show_gg' data-noticStartTime='{{item.eventDesc}}'><text class='tipp'>活动说明</text>：{{item.eventDesc}}</text>
          </view>
         <view class="classname2" bindtap="bm" data-eventId="{{item.eventId}}">
          <button wx:if="{{item.bmState==null}}">报名</button> 

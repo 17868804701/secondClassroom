@@ -70,4 +70,7 @@ button {
  color: #01b8ab;
  text-decoration: underline;
 }
-
+.tipp{
+ color: #20a1a1;
+ text-decoration: underline;
+}
