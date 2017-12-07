@@ -62,11 +62,13 @@ Page({
       }
      })
     } else {
+      console.log(res.data.object.list+"*******************************")
+      console.log(res.data.object.list.length+"*******************************")
      that.setData({
       // endList: res.data.object.endlist,
       // endListLength: res.data.object.endlist.length,
-      sqList: res.data.object.clsRoomList,
-      sqListLength: res.data.object.clsRoomList.length,
+      sqList: res.data.object.list,
+      sqListLength: res.data.object.list.length,
      })
     }
    }
@@ -123,9 +125,11 @@ Page({
        }
       })
      } else {
+       console.log(res.data.object.list+"***************************")
+       console.log(res.data.object.list.length+"*****************************")
       that.setData({
-       endList: res.data.object.clsRoomList,
-       endListLength: res.data.object.clsRoomList.length,
+       endList: res.data.object.list,
+       endListLength: res.data.object.list.length,
        // sqList: res.data.object.clsRoomList,
        // sqListLength: res.data.object.clsRoomList.length,
       })
