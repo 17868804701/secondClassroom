@@ -1,0 +1,19 @@
+<view class="main">
+
+  <view class="title">
+    <text class="title_name">批量审核</text>
+    <image src="../images/qd1.png" class="title_img"></image>
+  </view>
+  <view class="caozuo">
+    <radio-group bindchange="radioChange" id="radio">
+      <label class="checkbox">审核状态：
+        <checkbox value="disagree" checked="" style="zoom:60%"/>驳回
+        <checkbox value="agree" checked="" style="zoom:60%"/>同意
+      </label>
+    </radio-group>
+    <view class="section">
+      <textarea bindinput="bindTextAreaBlur"  placeholder="审批意见" id="textarea" />
+    </view>
+    <button class="no" bindtap="tijiao">提交</button>
+  </view>
+</view>

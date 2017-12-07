@@ -9,17 +9,10 @@ Page({
  },
  hdshInfo: function (e) {
   console.log(e);
-  let createtime = e.currentTarget.dataset.createtime
-  let creator = e.currentTarget.dataset.creator
-  let jbname = e.currentTarget.dataset.jbname
-  let mkname = e.currentTarget.dataset.mkname
-  let startxf = e.currentTarget.dataset.startxf
-  let xmname = e.currentTarget.dataset.xmname
-  let orderid = e.currentTarget.dataset.orderid
-  let evenname = e.currentTarget.dataset.evenname
-  let realname = e.currentTarget.dataset.realname
-  wx.navigateTo({
-    url: `../hdshInfo/hdshInfo?createtime=${createtime}&&creator=${creator}&&jbname=${jbname}&&mkname=${mkname}&&startxf=${startxf}&&xmname=${xmname}&&orderid=${orderid}&&evenname=${evenname}&&realname=${realname}`,
+  let eventId = e.currentTarget.dataset.eventid
+  // 跳转到学生活动报名列表页面
+  wx.redirectTo({
+   url: `../stu_hdList/stu_hdList?eventId=${eventId}`,
   })
  },
  /**
@@ -27,17 +20,14 @@ Page({
   */
  onLoad: function (options) {
   let that = this;
+  // 查询当前用户发布的活动列表
   wx.request({
-   url: `${getApp().data.url}business/common/homeTaskList`,
+   url: `${getApp().data.url}business/secClassRoom/event/myEventListQry`,
    method: 'POST',
    data: {
     "params": {
      "userName": getApp().data.userName,
      "sessionId": getApp().data.sessionId,
-     "creator": "",
-     "type": "secClassRoom",
-     "isEvent": "1",
-     "isXCX": "1"
     }
    },
    header: {
@@ -71,10 +61,10 @@ Page({
       }
      })
     } else {
-     console.log(res.data.object.clsRoomList)
+     console.log(res.data.object)
      that.setData({
-      list: res.data.object.clsRoomList,
-      listLength: res.data.object.clsRoomList.length
+      list: res.data.object.list,
+      listLength: res.data.object.list.length
      })
     }
    }

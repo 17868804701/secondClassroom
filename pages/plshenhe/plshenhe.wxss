@@ -10,7 +10,7 @@ page{
 }
 .title_name{
   position: absolute;
-  margin-top: 30rpx;
+  margin-top: 60rpx;
   font-size: 80rpx;
   color: #333;
   margin-left: 50rpx;
@@ -28,7 +28,7 @@ page{
   margin-top: 140rpx;
   font-size: 35rpx;
    margin-left: 50rpx;
-     color: #333;
+     color: #8e8e8e;
 }
 .stu_num1{
 
@@ -36,7 +36,7 @@ page{
   margin-top: 190rpx;
   font-size: 35rpx;
    margin-left: 50rpx;
-     color: #333;
+     color: #8e8e8e;
 }
 .title_img{
   width: 200rpx;
@@ -67,16 +67,16 @@ page{
 } 
 
 .ac_tel,.ac_type,.ac_fenyuan{
-  color: #333;
-  font-size: 30rpx;
+  color: #c2c2c2;
+  font-size: 35rpx;
   width: 90%;
-  height: 90rppx;
+  height: 120rppx;
   border-bottom: 1px solid #eeeeee;
-  line-height: 90rpx;
+  line-height: 120rpx;
   margin-left: 5%;
 }
 .ac_sq{
-  color: #20A1A1;
+  color: #c2c2c2;
   font-size: 35rpx;
   width: 90%;
   height: 120rppx;
@@ -97,7 +97,7 @@ page{
   position: absolute;
   background-color: #01b8ab;
   color: white;
-  margin-left: 100rpx;
+  margin-left: 280rpx;
   margin-bottom: 40rpx;
   width: 25%;
   height: 80rpx;
@@ -124,7 +124,7 @@ page{
   width: 86%;
   margin-left: 40rpx;
   border: 1px solid gainsboro;
-  height: 150rpx;
+  height: 250rpx;
   margin-top: 20rpx;
   padding: 20rpx 0 0 20rpx;
   border-radius: 10rpx;

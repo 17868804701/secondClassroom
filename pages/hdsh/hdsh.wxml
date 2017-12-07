@@ -6,18 +6,10 @@
 </view>
 <view class="main" wx:if="{{listLength!='0'}}">
   <view class="list" bindtap="hdshInfo" wx:for="{{list}}" 
-  data-mkName="{{item.mkName}}" 
-  data-creator="{{item.creator}}"
-  data-xmName="{{item.xmName}}"
-  data-jbName="{{item.jbName}}" 
-  data-startXf="{{item.startXf}}"
-  data-orderId="{{item.orderId}}"
-  data-evenName="{{item.evenName}}"
-  data-createTime="{{item.createTime}}"
-  data-realname="{{item.realname}}"
+  data-eventId="{{item.eventId}}" 
   >
     <image src="../images/hd.png" class="list_logo"></image>
-    <view class="list_title">{{item.evenName}} <text style='color:#20a1a1;margin-left:10rpx;'>({{item.realname}})</text></view>
+    <view class="list_title">{{item.evenName}}</view>
     <view class="info">查看</view>
   </view>
 </view>

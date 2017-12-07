@@ -37,17 +37,16 @@ Page({
   })
  },
  radioChange: function (e) {
-
   this.setData({
    radioValue: e.detail.value
   })
  },
  bindTextAreaBlur: function (e) {
-
   this.setData({
    textareaValue: e.detail.value
   })
  },
+ // 单个审核
  tijiao: function () {
   console.log(getApp().data.sessionId)
   console.log(getApp().data.userName)
