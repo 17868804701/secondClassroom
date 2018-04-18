@@ -33,10 +33,10 @@ page{
 .name{
   position: absolute;
   margin-left: 140rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
   margin-top: 40rpx;
   color: #777777;
-  font-weight: bold;
+  /* font-weight: bold; */
 
 }
 .status{

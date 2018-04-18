@@ -12,7 +12,7 @@ Page({
   let state = e.currentTarget.dataset.state;
   let eventId = e.currentTarget.dataset.eventid;
   wx.showLoading({
-   title: '正在定位中...',
+    title: '正在定位中...',
   })
   // 允许从相机和相册扫码
   wx.getLocation({
