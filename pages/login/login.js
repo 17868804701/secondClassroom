@@ -40,8 +40,8 @@ Page({
       })
     } else {
       wx.request({
-        // url: `${getApp().data.url}business/login`,
-        url: "https://meetmecar.com/3e-platform-intf/ws/business/login",
+        url: `${getApp().data.url}business/login`,
+        // url: "https://meetmecar.com/3e-platform-intf/ws/business/login",
         method: 'POST',
         data: { "params": { "userName": this.data.username, "password": this.data.password } },
         header: {
