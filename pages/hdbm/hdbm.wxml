@@ -19,7 +19,7 @@
          </view>
         <view class="classname2" bindtap="bm" data-eventId="{{item.eventId}}">
          <button wx:if="{{item.bmState==null}}">报名</button> 
-         <button wx:if="{{item.bmState!=null}}">已报名</button> 
+         <button wx:if="{{item.bmState!=null}}" disabled='{{item.bmState!=null}}'>已报名</button> 
         </view>
       </view>
     </view>

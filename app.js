@@ -16,7 +16,8 @@ App({
     shequId:'',
     rxTime:'',
     userType:'',
-    realname:''
+    realname:'',
+    isSuccess:false
   },
   onLaunch: function() {
     //调用API从本地缓存中获取数据

@@ -6,7 +6,7 @@ Page({
   */
  data: {
   array: ['参加素质拓展活动', '拔河比赛', '基恩素养活动', '数学建模'],
-  itemLength: ''
+  itemLength: '',
  },
  bindPickerChange: function (e) {
   console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -18,6 +18,7 @@ Page({
   * 生命周期函数--监听页面加载
   */
  onLoad: function (options) {
+   console.log(getApp().data.isSuccess)
   console.log(getApp().data.userName)
   console.log(getApp().data.sessionId)
   console.log(getApp().data.fyId)
@@ -149,6 +150,7 @@ Page({
     } else {
 
      if (res.data.object.resultCode == '0001') {
+ 
       wx.showModal({
        title: '提示',
        content: '已报名此活动，请勿重复报名',
@@ -163,6 +165,7 @@ Page({
        title: '报名成功',
        duration: 2000
       })
+      that.onLoad();
      }
     }
    }
@@ -218,7 +221,7 @@ Page({
   * 生命周期函数--监听页面显示
   */
  onShow: function () {
-
+  //  this.onLoad();
  },
 
  /**
