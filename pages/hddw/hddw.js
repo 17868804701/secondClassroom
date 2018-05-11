@@ -185,7 +185,7 @@ Page({
   if(time<time1){
     wx.showModal({
       title: '提示',
-      content: '活动还没结束，不能进行签退',
+      content: '活动还没开始，不能进行签退',
     })
   }else{
     wx.request({

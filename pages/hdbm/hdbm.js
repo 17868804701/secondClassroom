@@ -7,6 +7,7 @@ Page({
  data: {
   array: ['参加素质拓展活动', '拔河比赛', '基恩素养活动', '数学建模'],
   itemLength: '',
+  isSuccess:false
  },
  bindPickerChange: function (e) {
   console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -85,6 +86,9 @@ Page({
   })
  },
  bm: function (e) {
+   this.setData({
+     isSuccess:true
+   })
   let eventId = e.currentTarget.dataset.eventid;
   console.log(eventId)
   let that = this;
