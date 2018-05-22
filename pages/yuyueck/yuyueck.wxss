@@ -78,6 +78,10 @@ page{
   margin-top: 23rpx;
   /* font-weight: bold; */
   font-size: 30rpx;
+  overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+width: 60%
 }
 .status{
   position: absolute;

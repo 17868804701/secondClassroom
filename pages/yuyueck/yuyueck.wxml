@@ -25,9 +25,10 @@
     <view class="list" bindtap="activity1" data-index="{{index}}" id="{{item.evenName}}">
         <image hidden="{{item.isNotic==='0'}}" src="../images/message.png" class="message" catchtap='chakan' data-noticDesc='{{item.noticDesc}}' data-noticStartTime='{{item.noticStartTime}}' data-noticEndTime='{{item.noticEndTime}}'data-noticAddress='{{item.noticAddress}}'></image>
         <image src="../images/xs.png" class="img"></image>
-        <text class="name">{{item.evenName}}</text>
+        <view class="name">{{item.evenName}}</view>
         <text class="tip">查看详情</text>
-        <text class="status">审核中...</text>
+        <text class="status" wx:if="{{item.state=='start'}}">审核中...</text>
+        <text class="status" wx:if="{{item.state=='1'}}">报名审核通过</text>
         <!-- <text class="status" wx:if="{{item.state=='0'}}">审核通过</text> -->
         <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
       </view>
@@ -58,7 +59,8 @@
         </view>
         <view class="contents_list">
           <text class="list_name">审核状态</text>
-          <text class="name_content">审核中...</text>
+          <text class="name_content" wx:if="{{item.state=='start'}}">审核中...</text>
+          <text class="name_content" wx:if="{{item.state=='1'}}">报名审核通过</text>
           <!-- <text class="name_content" wx:if="{{item.state=='0'}}">审核通过</text> -->
         </view>
       </view>
@@ -88,9 +90,10 @@
 
       <view class="list" bindtap="activity" data-index="{{index}}" id="{{item.evenName}}">
         <image src="../images/xs.png" class="img"></image>
-        <text class="name">{{item.evenName}}</text>
+        <view class="name">{{item.evenName}}</view>
         <text class="tip">查看详情</text>
-        <text class="status">审核通过</text>
+        <text class="status" wx:if="{{item.state=='end'}}">审核通过</text>
+        <text class="status" wx:if="{{item.state!='end'}}">审核中...</text>
         <image src="{{item.open ? '../images/up.png' : '../images/down.png'}}" class="down"></image>
       </view>
 
@@ -121,7 +124,8 @@
         </view>
         <view class="contents_list">
           <text class="list_name">审核状态</text>
-          <text class="name_content">审核通过</text>
+          <text class="name_content" wx:if="{{item.state=='end'}}">审核通过</text>
+          <text class="name_content" wx:if="{{item.state!='end'}}">审核中</text>
         </view>
       </view>
     </view>

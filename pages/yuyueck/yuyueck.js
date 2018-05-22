@@ -128,6 +128,7 @@ Page({
      })
     } else {
      console.log(res.data.object.wcjlist)
+     console.log(res.data.object.ycjlist)
      that.setData({
       wcjlist: res.data.object.wcjlist,
       ycjlist: res.data.object.ycjlist,

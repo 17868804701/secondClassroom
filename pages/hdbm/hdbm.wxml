@@ -21,8 +21,9 @@
         <text bindtap='show_gg' data-noticStartTime='{{item.eventDesc}}'><text class='tipp'>活动说明</text>：{{item.eventDesc}}</text>
          </view>
         <view class="classname2" bindtap="bm" data-eventId="{{item.eventId}}">
-         <button wx:if="{{item.bmState==null}}" disabled='{{isSuccess}}'>报名</button> 
-         <button wx:if="{{item.bmState!=null}}">已报名</button> 
+         <button wx:if="{{item.bmState==null}}">报名</button> 
+         <!-- <button wx:if="{{item.bmState!=null}}"  disabled='{{isSuccess}}'>已报名</button>  -->
+          <button wx:if="{{item.bmState!=null}}">已报名</button>  
         </view>
       </view>
     </view>
