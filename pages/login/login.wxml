@@ -14,12 +14,12 @@
       <view class="bd">
         <form class="login-form">
           <view class="input-group {{userid_focus ? 'active' : ''}}">
-            <text class="input-label">帐号</text>
-            <input type="text" id="userid" placeholder="工号/学号 " bindinput="userInput" bindfocus="inputFocus" bindblur="inputBlur" />
+            <text class="input-label" style='font-size:30rpx;'>帐号</text>
+            <input type="text" id="userid" placeholder="工号/学号 " placeholder-style='font-size:30rpx;' bindinput="userInput" bindfocus="inputFocus" bindblur="inputBlur" />
           </view>
           <view class="input-group {{passwd_focus ? 'active' : ''}}">
-            <text class="input-label">密码</text>
-            <input type="password" id="passwd" placeholder="密码" bindinput="pwdInput" bindfocus="inputFocus" bindblur="inputBlur" />
+            <text class="input-label" style='font-size:30rpx;'>密码</text>
+            <input type="password" id="passwd" placeholder="密码" placeholder-style='font-size:30rpx;' bindinput="pwdInput" bindfocus="inputFocus" bindblur="inputBlur" />
           </view>
           <view class="login-help" bindtap="showHelp">
             <text>帮助</text>

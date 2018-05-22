@@ -9,7 +9,10 @@
   <view class="activity_list" wx:for="{{item}}"  >
     <view class="content">
       <view class='activity_name'>活动主题：{{item.evenName}}</view>
-      <view class='activity_time'>活动时间：<text style="color:#01b8ab;">{{item.startTime}}至{{item.endTime}}</text></view>
+      <view class='activity_time'>活动时间：<text style="color:#01b8ab;">{{item.startTime}}至{{item.endTime}}</text>
+      </view>
+           <view class='activity_time'>活动地点：<text style="color:#01b8ab;">{{item.address}}</text>
+      </view>
       <view class='activity_sm'>
         <view class="classname1">
                  <text wx:if="{{item.isNotic=='1'}}" style='color:#01b8ab' data-noticDesc='{{item.noticDesc}}' 

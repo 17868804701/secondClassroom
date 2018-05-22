@@ -18,7 +18,7 @@ page {
 }
 
 .activity_name {
-  font-size: 35rpx;
+  font-size: 30rpx;
   margin-left: 20rpx;
   margin-top: 20rpx;
   width: 80%;
@@ -28,7 +28,7 @@ page {
   width: 80%;
   margin-left: 20rpx;
   margin-top: 20rpx;
-  font-size: 35rpx;
+  font-size: 30rpx;
 }
 
 .activity_sm {
@@ -38,6 +38,7 @@ page {
   padding-top: 10rpx;
   padding-bottom: 20rpx;
   display: flex;
+  font-size: 30rpx;
   flex-direction:row;
   justify-content: space-between;
 }

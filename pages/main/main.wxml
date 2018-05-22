@@ -8,33 +8,33 @@
 <view class='content'>
  <view class='item' bindtap="hdbm" wx:if="{{userType=='1'}}">
   <image src="../images/hdbm.png"></image>
-  <text>活动报名</text>
+  <text style='font-size:30rpx;'>活动报名</text>
  </view>
  <view class='item' bindtap="hdyuyueck" wx:if="{{userType=='1'}}">
   <image src="../images/yyck.png"></image>
-  <text>活动预约查看</text>
+  <text style='font-size:30rpx;'>活动预约查看</text>
  </view>
  <view class='item' bindtap="hdqd" wx:if="{{userType=='1'}}">
   <image src="../images/qqdd.png"></image>
-  <text>活动签到</text>
+  <text style='font-size:30rpx;'>活动签到</text>
  </view>
  <view class='item' bindtap="apply_xfList" wx:if="{{userType=='1'}}">
   <image src="../images/sqck.png"></image>
-  <text>学分申请查看</text>
+  <text style='font-size:30rpx;'>学分申请查看</text>
  </view>
  <view class='item' bindtap="xfmx" wx:if="{{userType=='1'}}">
   <image src="../images/ckmx.png"></image>
-  <text>学分明细查看</text>
+  <text style='font-size:30rpx;'>学分明细查看</text>
  </view>
 
 
  <view class='item' bindtap="sh" wx:if="{{userType=='0'||userType==null}}">
   <image src="../images/gly.png"></image>
-  <text>管理员</text>
+  <text style='font-size:30rpx;'>管理员</text>
  </view>
   <view class='item' bindtap='dc'>
   <image src="../images/dc.png"></image>
-  <text>登出</text>
+  <text style='font-size:30rpx;'>登出</text>
  </view>
   <view class='item null' wx:if="{{userType=='0'||userType==null}}">
 

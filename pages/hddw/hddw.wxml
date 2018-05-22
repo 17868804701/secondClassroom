@@ -10,6 +10,7 @@
     <view class="content">
       <view class='activity_name'>活动主题：{{item.evenName}}</view>
       <view class='activity_time'>活动时间：<text style="color:#01b8ab;">{{item.startTime}}至{{item.endTime}}</text></view>
+            <view class='activity_time'>活动地点：<text style="color:#01b8ab;">{{item.address}}</text></view>
       <view class='activity_sm'>
         <view class="classname1"><text bindtap='show_gg' data-noticStartTime='{{item.eventDesc}}'><text class='tipp'>活动说明</text>：{{item.eventDesc}}</text></view>
         <view class="classname2"><button bindtap="bm" data-eventId="{{item.eventId}}">定位</button><button bindtap="fqqt" data-eventId="{{item.eventId}}" data-startTime="{{item.startTime}}">签退</button></view>
