@@ -23,7 +23,9 @@
         <view class="classname2" bindtap="bm" data-eventId="{{item.eventId}}">
          <button wx:if="{{item.bmState==null}}">报名</button> 
          <!-- <button wx:if="{{item.bmState!=null}}"  disabled='{{isSuccess}}'>已报名</button>  -->
-          <button wx:if="{{item.bmState!=null}}">已报名</button>  
+          <button wx:if="{{item.bmState=='start'}}">审核中</button>  
+          <button wx:if="{{item.bmState=='1'}}">审核失败</button>  
+          <button wx:if="{{item.bmState=='0'}}">报名成功</button>  
         </view>
       </view>
     </view>
